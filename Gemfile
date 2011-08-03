@@ -1,13 +1,13 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.0.rc1'
-gem 'thin'
+#gem 'thin'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 #gem 'pg'
-gem 'sqlite3'
+#gem 'sqlite3'
 
 # Asset template engines
 gem 'sass'
@@ -30,6 +30,11 @@ group :test do
   gem 'turn', :require => false
 end
 
+group :development do
+  gem 'sqlite3'
+end
+
 group :production do
   gem 'thin'
+  gem 'pg'
 end
