@@ -1,13 +1,13 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.0.rc1'
-gem 'heroku'
 gem 'thin'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
+#gem 'pg'
+gem 'sqlite3'
 
 # Asset template engines
 gem 'sass'
