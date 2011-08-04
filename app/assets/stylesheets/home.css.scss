@@ -1,118 +1,263 @@
-/* 
-  Place all the styles related to the matching controller here.
-  They will automatically be included in application.css.
-  You can use Sass (SCSS) here: http://sass-lang.com/
-*/
-
 @import "compass/css3";
-@import "compass/css3/gradient";
-
-$header-color:rgba(0,0,0,1);
-$header-text:#65B042;
-$desc-text:#AEAEAE;
-$blue:#c6e7ec;
-$line-color:#0E3F54; 
 
 body {
-	background-color:$blue;
-	color: $blue;
+	padding: 0;
+	font-family:"Times New Roman", Times, serif;
+	font-size: 16px;
+	color: #2E3033;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	background-color: #FFFFFF;
+	background-image: url(../images/bg.png);
+	background-repeat: repeat-x;
 }
-
-
-header {
-  position: absolute;
-  top: 15%;
-  left: 0px;
-  width: 100%;
-  height: 1px;
-  overflow: visible;
-
-  .lower {
-	width: 700px;
-	height: 60px;
-	margin-left: -354px;  /***  width / 2   ***/
-	position: absolute;
-	left: 50%;
-	border-style:none solid solid;
-	border-color: $line-color;
-	border-width:4px;
-	text-indent: -9999px;
-	@include border-bottom-radius(4px);
-  }
-
-  hgroup {	
-	width: 700px;
-	height: 120px;
-	margin-left: -350px;  /***  width / 2   ***/
-	position: absolute;
-	top: -60px;          /***  height / 2   ***/
-	left: 50%;
-    background-color: $header-color;
-    color: $header-text;
-    text-align: center;  
-	@include border-top-radius(60px);
-
-    .title {
-	  font-family: Helvetica, sans-serif;
-	  font-size: 5em;
-	  margin: 0em;
-	}
-	
-	.desc {
-	  color:$desc-text;	
-	}	
-
-  }
-
-  .separator {
-    background-color: $line-color;
-    text-indent: -9999px;
-    height: 5px; 	
-  }
-
-  nav {	
-	
-	li { 
+#menu
+{
+	width: 800px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	text-align: center;
+	height: 50px;
+	padding: 0px;
+}
+.menubutton
+{
+	text-decoration: none;
+	height: 36px;
+	width: 198px;
+	float: left;
+	padding: 0px;
+	background-image: url(../images/button2.png);
+	margin-top: 0px;
+	margin-right: 2px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	@include border-radius(6px);
+	img {
+	  height: 20px;
 	  position: relative;
-	  top: 60px;
-	  left: 1000px;
-    }
-
-    a {
-	  display:block;
-	  width: 50px;
-	  
-	  padding:{
-		top: 8px;
-	    bottom: 5px;
-	    left: 5px;
-	    right: 5px; 
-	  }
-      	
-	  text-decoration: none;
-	  color: white;
-	  margin: 10px 0 10px 450px;
-	  text-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0;
-	  text-align: center;
-	  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #6ecf36), color-stop(100%, #4e9326));
-	  background-image: -moz-linear-gradient(top, #6ecf36 0%, #4e9326 100%);
-	  background-image: linear-gradient(top, #6ecf36 0%, #4e9326 100%);
-	  
-	  @include border-radius(5px);
+	  left: -15px;	
+	  top: 4px;
+	}
+}
+.menubutton  a
+{
+	text-decoration:none;
+	color: #FFFFFF;
+	width: inherit;
+	height: 36px;
+	line-height: 36px;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
 	
-	  margin-left: 0;
-	  margin-right: 10px;
-	  -webkit-box-flex: 1;
-    }
-  }
+	&.has_logo {
+	  position: relative;
+	  left: -10px;
+	}	
+	
+	&:hover {
+	  color:#8BBB4F;
+	  text-decoration: none;
+	  float: left;
+	  height: 36px;
+	  width: inherit;
+	}
 }
 
-.content {
-  background-color: #bbbbbb;
-  min-height: 600px;
-  position: relative;
-  top: 250px;	
-  width: 700px;
-  margin: auto;
+.menubutton  a:visited
+{
+	color:#FFFFFF;
+	text-decoration: none;
+	float: left;
+	height: 36px;
+	width: inherit;
+}
+.menubutton  a:hover
+{
+	color:#8BBB4F;
+	text-decoration: none;
+	float: left;
+	height: 36px;
+	width: inherit;
+}
+#header
+{
+	width:800px;
+	height:100px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding: 0px;
+}
+#logo
+{
+	text-align:left;
+	font-size:36px;
+	color:#FFFFFF;
+	font-family:"Times New Roman", Times, serif;
+	width: 10px;
+	height: 100px;
+	line-height: 100px;
+	padding-left: 75px;
+	background-image: url(../images/z.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	text-transform: uppercase;
+	@include border-radius(20px);
+}
+#photo {
+	height: 150px;
+	width: 800px;
+	text-align: center;
+	background-image: url(../images/photo2.png);
+	font-family: "Times New Roman", Times, serif;
+	font-size: 36px;
+	color: #2E3033;
+	line-height: 150px;
+	@include border-radius(5px);
+}
+img {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
 }
 
+
+#content
+{
+	margin-top:0px;
+	width:800px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+.contentbox {
+	width: 800px;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+}
+
+
+h1
+{
+	color:#51790E;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 30px;
+	line-height: 30px;
+	padding: 0px;
+	margin-top: 20px;
+	margin-right: 0px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+}
+h2 {
+	font-size: 22px;
+	padding: 0px;
+	line-height: 22px;
+	color: #51790E;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #51790E;
+	margin-top: 20px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+h3 {
+	font-size: 16px;
+	margin: 0px;
+	padding: 0px;
+	line-height: 16px;
+}
+
+.text
+{
+	line-height:22px;
+	width: 800px;
+}
+.textsmall
+{
+	line-height:22px;
+	width: 700px;
+	margin-left: 100px;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.icon {
+	height: 64px;
+	width: 64px;
+	float: left;
+}
+.more {
+	color: #51790E;
+	width: 85px;
+	background-image: url(../images/more.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	height: 20px;
+}
+.more a {
+	color: #51790E;
+	text-decoration: underline;
+}
+
+
+#footer {
+	text-align:center;
+	font-size:11px;
+	font-family:"Times New Roman", Times, serif;
+	color:#FFFFFF;
+	width: 100%;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	line-height: 11px;
+	height: 70px;
+	background-image: url(../images/footerbg.png);
+	background-repeat: repeat-x;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	clear: both;
+}
+
+#footer a
+{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+a
+{
+	color:#2E3033;
+	text-decoration:underline;
+}
+a:visited
+{
+	color:#2E3033;
+	text-decoration: underline;
+
+}
+
+a:hover
+{
+	color: #2E3033;
+	text-decoration: none;
+}
+p {
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
+}
