@@ -1,0 +1,18 @@
+/* 
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+  You can use Sass (SCSS) here: http://sass-lang.com/
+*/
+/* line 10, ../../app/assets/stylesheets/home.css.scss */
+body {
+  background-color: #bbbbbb;
+}
+
+/* line 15, ../../app/assets/stylesheets/home.css.scss */
+header hgroup {
+  background-color: #e6e6fa;
+}
+/* line 20, ../../app/assets/stylesheets/home.css.scss */
+header nav li {
+  display: inline;
+}

@@ -3,3 +3,23 @@
   They will automatically be included in application.css.
   You can use Sass (SCSS) here: http://sass-lang.com/
 */
+
+$link-color:#bbbbbb;
+$blue:#E6E6FA;
+
+body {
+	background-color:$link-color;
+}
+
+header {
+  hgroup {	
+      background-color: $blue;	
+  }
+
+  nav {
+	li { 
+	  display:inline;
+    }
+  }
+}
+
