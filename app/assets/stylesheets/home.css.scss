@@ -4,22 +4,115 @@
   You can use Sass (SCSS) here: http://sass-lang.com/
 */
 
-$link-color:#bbbbbb;
-$blue:#E6E6FA;
+@import "compass/css3";
+@import "compass/css3/gradient";
+
+$header-color:rgba(0,0,0,1);
+$header-text:#65B042;
+$desc-text:#AEAEAE;
+$blue:#c6e7ec;
+$line-color:#0E3F54; 
 
 body {
-	background-color:$link-color;
+	background-color:$blue;
+	color: $blue;
 }
 
+
 header {
-  hgroup {	
-      background-color: $blue;	
+  position: absolute;
+  top: 15%;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  overflow: visible;
+
+  .lower {
+	width: 700px;
+	height: 60px;
+	margin-left: -354px;  /***  width / 2   ***/
+	position: absolute;
+	left: 50%;
+	border-style:none solid solid;
+	border-color: $line-color;
+	border-width:4px;
+	text-indent: -9999px;
+	@include border-bottom-radius(4px);
   }
 
-  nav {
+  hgroup {	
+	width: 700px;
+	height: 120px;
+	margin-left: -350px;  /***  width / 2   ***/
+	position: absolute;
+	top: -60px;          /***  height / 2   ***/
+	left: 50%;
+    background-color: $header-color;
+    color: $header-text;
+    text-align: center;  
+	@include border-top-radius(60px);
+
+    .title {
+	  font-family: Helvetica, sans-serif;
+	  font-size: 5em;
+	  margin: 0em;
+	}
+	
+	.desc {
+	  color:$desc-text;	
+	}	
+
+  }
+
+  .separator {
+    background-color: $line-color;
+    text-indent: -9999px;
+    height: 5px; 	
+  }
+
+  nav {	
+	
 	li { 
-	  display:inline;
+	  position: relative;
+	  top: 60px;
+	  left: 1000px;
+    }
+
+    a {
+	  display:block;
+	  width: 50px;
+	  
+	  padding:{
+		top: 8px;
+	    bottom: 5px;
+	    left: 5px;
+	    right: 5px; 
+	  }
+      	
+	  text-decoration: none;
+	  color: white;
+	  margin: 10px 0 10px 450px;
+	  text-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0;
+	  text-align: center;
+	  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #6ecf36), color-stop(100%, #4e9326));
+	  background-image: -moz-linear-gradient(top, #6ecf36 0%, #4e9326 100%);
+	  background-image: linear-gradient(top, #6ecf36 0%, #4e9326 100%);
+	  
+	  @include border-radius(5px);
+	
+	  margin-left: 0;
+	  margin-right: 10px;
+	  -webkit-box-flex: 1;
     }
   }
+}
+
+.content {
+  background-color: #bbbbbb;
+  min-height: 600px;
+  position: relative;
+  top: 250px;	
+  width: 700px;
+  margin: auto;
 }
 

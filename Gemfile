@@ -13,7 +13,7 @@ gem 'rails',     :git => 'git://github.com/rails/rails.git'
 gem 'sass'
 gem 'coffee-script'
 gem 'uglifier'
-gem 'compass'
+gem 'compass', :require => false
 
 gem 'jquery-rails'
 

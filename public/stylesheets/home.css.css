@@ -3,16 +3,29 @@
   They will automatically be included in application.css.
   You can use Sass (SCSS) here: http://sass-lang.com/
 */
-/* line 10, ../../app/assets/stylesheets/home.css.scss */
+/* line 12, ../../app/assets/stylesheets/home.css.scss */
 body {
   background-color: #bbbbbb;
 }
 
-/* line 15, ../../app/assets/stylesheets/home.css.scss */
+/* line 17, ../../app/assets/stylesheets/home.css.scss */
 header hgroup {
   background-color: #e6e6fa;
+  text-align: center;
 }
-/* line 20, ../../app/assets/stylesheets/home.css.scss */
+/* line 21, ../../app/assets/stylesheets/home.css.scss */
+header hgroup p {
+  border-style: groove;
+  border-color: #bbbbbb;
+  -webkit-border-radius: 4px 4px;
+  -moz-border-radius: 4px / 4px;
+  -o-border-radius: 4px / 4px;
+  -ms-border-radius: 4px / 4px;
+  -khtml-border-radius: 4px / 4px;
+  border-radius: 4px / 4px;
+  padding-top: 0em;
+}
+/* line 30, ../../app/assets/stylesheets/home.css.scss */
 header nav li {
   display: inline;
 }
