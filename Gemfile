@@ -6,8 +6,10 @@ gem 'rails', '3.2.8'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'heroku'
-gem 'sqlite3'
 
+group :development do
+  gem 'sqlite3'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
