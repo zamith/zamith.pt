@@ -28,6 +28,13 @@ body
     position: fixed
 
 @media (max-width: 767px)
+  #zamith-img
+    content: url("<%= image_path("zamith.jpeg") %>")
+
   .navbar-fixed-top
     margin-right: 0px
     margin-left: 0px
+
+@media (max-width: 480px)
+  #zamith-img
+    content: url("<%= image_path("zamith2.jpg") %>")
