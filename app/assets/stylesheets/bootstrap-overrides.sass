@@ -1,3 +1,5 @@
+$gb-blue: #0091DA
+
 body
   padding-top: 60px
   padding-bottom: 60px
@@ -8,8 +10,17 @@ body
 .navbar-inverse .brand, .navbar-inverse .nav > li > a
   color: #BEBEBE
 
+.navbar-inverse .nav-pills > .active > a, .navbar-inverse .nav-pills > .active > a:hover
+  background-color: $gb-blue
+
+.navbar .nav > li > a:hover
+  color: $gb-blue
+
+.navbar .nav > li > a
+  padding: 7px 12px
+
 .hero-unit h1
-  color: #0091DA
+  color: $gb-blue
   margin-bottom: 10px
 
 @media (max-width: 979px)
