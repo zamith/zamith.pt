@@ -1,5 +1,7 @@
 $gb-blue: #0091DA
 
+/* Navbar */
+
 body
   padding-top: 60px
   padding-bottom: 60px
@@ -19,27 +21,17 @@ body
 .navbar .nav > li > a
   padding: 7px 12px
 
-.hero-unit h1
-  color: $gb-blue
-  margin-bottom: 15px
-
-#zamith-img
-  margin-top: 91px
-
 @media (max-width: 979px)
   .navbar-fixed-top
     position: fixed
 
 @media (max-width: 767px)
-  #zamith-img
-    content: url("<%= image_path("zamith.jpeg") %>")
-    margin-top: 0px
-
   .navbar-fixed-top
     margin-right: 0px
     margin-left: 0px
 
-@media (max-width: 480px)
-  #zamith-img
-    content: url("<%= image_path("zamith2.jpg") %>")
-    margin-top: 0px
+/* Typography */
+
+.hero-unit h1
+  color: $gb-blue
+  margin-bottom: 15px

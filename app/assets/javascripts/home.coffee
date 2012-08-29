@@ -1,0 +1,2 @@
+$ ->
+  $('figure.responsive').picture()

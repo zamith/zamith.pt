@@ -23,6 +23,10 @@
   <div class="row">
     <div class="span6 offset1">
       <h1>Luís Ferreira</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span6 offset1">
       <p>
         Born and raised in Guimarães, I went to Braga to get my college degree in Informatics and have not yet left.
       </p>
@@ -37,6 +41,11 @@
       </p>
     </div>
     <div class="span3 offset1">
-      <%= image_tag "zamith2.jpg", id: "zamith-img", class: "img-polaroid" %>
+      <figure class="responsive img-polaroid" data-media="<%= image_path("zamith2.jpg") %>" data-media440="<%= image_path("zamith.jpeg") %>" data-media767="<%= image_path("zamith2.jpg") %>" title="Picture of me.">
+        <noscript>
+          <%= image_tag "zamith2.jpg", id: "zamith-img", class: "img-polaroid" %>
+        </noscript>
+       </figure>
     </div>
+  </div>
 </section>
