@@ -45,7 +45,24 @@
         <noscript>
           <%= image_tag "zamith2.jpg", id: "zamith-img", class: "img-polaroid" %>
         </noscript>
-       </figure>
+      </figure>
+
+      <div class="social-links">
+        <%= link_to "http://www.facebook.com/luis.zamith", class: "link" do %>
+          <i class="icon-facebook-sign"></i>
+          <span class="social-link-name">Facebook</span>
+        <% end %>
+
+        <%= link_to "http://twitter.com/zamith", class: "link" do %>
+          <i class="icon-twitter"></i>
+          <span class="social-link-name">Twitter</span>
+        <% end %>
+
+        <%= link_to "http://www.linkedin.com/in/zamith", class: "link" do %>
+          <i class="icon-linkedin-sign"></i>
+          <span class="social-link-name">Linkedin</span>
+        <% end %>
+      </div>
     </div>
   </div>
 </section>

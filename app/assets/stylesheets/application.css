@@ -12,5 +12,7 @@
  *= require reset
  *= require bootstrap/bootstrap.min
  *= require bootstrap/bootstrap-responsive.min
- *= require_tree .
+ *= require font-awesome
+ *= require bootstrap-overrides
+ *= require home
  */
